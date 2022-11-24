@@ -1,0 +1,194 @@
+.wCast {
+   background:linear-gradient(to bottom, rgba(48, 48, 48, 0.12), rgba(0, 0, 0, 0.23)), url(./imgs/hot.jpg);
+   background-position: center ;
+   transition: 0.4 ease-out;
+   min-height: 100vh;
+}
+.wCast.Clouds{
+  background:  url(./imgs/clouds.jpg);
+  background-position: center ;
+  transition: 0.4 ease-out;
+} 
+.wCast.Clear{
+  background: linear-gradient(to bottom, rgba(93, 93, 93, 0.16), rgba(0, 0, 0, 0.23)), url(./imgs/clear.jpg);
+  background-position: center ;
+  transition: 0.4 ease-out;
+} 
+.wCast.Drizzle{
+  background: url(./imgs/drizzle.png);
+  background-position: center ;
+  transition: 0.4 ease-out;
+} 
+.wCast.Thunderstorm{
+  background: url(./imgs/thunder.jpg);
+  background-position: center ;
+  transition: 0.4 ease-out;
+} 
+.wCast.Rain{
+  background: url(./imgs/rain.jpg);
+  background-position: center ;
+  transition: 0.4 ease-out;
+}
+.wCast.Snow{
+  background: url(./imgs/snow.jpg);
+  background-position: center ;
+  transition: 0.4 ease-out;
+}
+  
+.wCastBody{
+  min-height: 70vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wCastHeader{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wCastSearchBox{
+  width: 100%;
+  margin: 16px 0px 24px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wCastSearchBox .wCastSearchBar{
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  
+  padding: 4px;
+  outline: none;
+  border: none;
+
+  background-color: rgba(45, 45, 45, 0.464);
+  border-radius: 16px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.63);
+  font-size: 20px;
+}
+
+.wCastSearchBox .wCastSearchBar:focus{
+  background-color: rgba(45, 45, 45, 0.654);
+  transition: 0.4s;
+}
+.wCastSearchBox input[type="text"] {
+  padding-left: 24px;
+  font-weight: 500;
+  color: aliceblue;
+}
+.wCastSearchBar::placeholder{
+  color: rgb(228, 228, 228);
+}
+
+.wCastSearchBox img{
+  max-height: 84px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4px; 
+}
+
+.locationBox .location{
+  color: aliceblue;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.63);
+  margin-bottom: -12px;
+}
+
+.locationBox .date{
+  color: aliceblue;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.63);
+  margin-bottom: 32px;
+}
+
+.weatherBox {
+  text-align: center;
+}
+
+.weatherBox .temp{
+  position: relative;
+  display: inline-block;
+  background-color: rgba(45, 45, 45, 0.464);
+  border-radius: 16px;
+  padding: 0px 16px 0px 16px;
+  font-size: 96px;
+  font-weight: 700;
+  color: aliceblue;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.63);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.63);
+  margin-bottom: 12px;
+ }
+
+.weatherBox .weather{
+  position: relative;
+  font-size: 48px;
+  font-weight: 600;
+  color: aliceblue;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.63);
+ }
+
+.wCastlinks{
+  padding-left: 36px;
+  padding-top: 24px;
+  
+  font-weight: 500;
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.extras{
+  display:inline-flex;
+  justify-content: space-evenly;
+  background-color: rgba(45, 45, 45, 0.464);
+  border-radius: 16px;
+  padding: 8px 0px 8px 0px;
+  font-size: 16px;
+  font-weight: 600;
+  color: aliceblue;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.63);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+  margin-top: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+.wCastHR{
+  width: 2; 
+  size: 500; 
+  color: rgba(255, 255, 255, 0.401);
+ }
+
+ .errorMsg{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  top: 0;
+ }
+
+ @media (max-width: 360px ) {
+  .wCastSearchBox img{
+    max-height: 74px;
+     
+  }
+}
+
+.WLinkStyle{
+  color: white;
+  text-decoration: none;
+}

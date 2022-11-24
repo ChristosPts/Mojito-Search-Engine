@@ -1,0 +1,216 @@
+.ListApp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-family:Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(45deg, transparent 20%, #222222 25%, transparent 25%),
+  linear-gradient(-45deg, transparent 20%, #222222 25%, transparent 25%),
+  linear-gradient(-45deg, transparent 75%, #222222 80%, transparent 0),
+  radial-gradient(#222222 1px, transparent 0);
+  background-size: 30px 30px, 30px 30px;
+  background-color: #3f3f3f;
+}
+
+.List{
+  overflow: hidden;
+  width: 100%;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  height:100vh;
+}
+
+.Listlogo{
+  margin-bottom: 16px;
+}
+
+.Listlogo, .tasks{
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  position: relative;
+}
+
+.newTaskForm, .updateTaskForm{  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.newTaskForm form, .updateTaskForm form {
+  display: flex;
+  width: 96%;
+  max-width: 600px;
+}
+
+.newTaskForm form input{
+  border: none;
+  outline: none;
+  border-radius: 6px 0px 0px 6px;
+  font-size: 16px;
+  width: 79%;
+  margin-right: 2%;
+  padding: 4px;
+}
+
+.newTaskForm form button{
+  width: 19%;
+  border-radius: 0px 8px 8px 0px;
+  border: none;
+  outline: none;
+  background-color: #5dbc00;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.newTaskForm form button:hover{
+  background-color: #478e00;
+}
+
+.newTaskForm input[type="text"], .updateTaskForm input[type="text"] {
+  padding-left: 8px;
+   font-weight: 500;
+   color: rgb(27, 29, 30);
+ }
+
+.newTaskForm::placeholder{
+  color: rgb(0, 0, 0);
+}
+
+.updateTaskForm form input{
+  border: none;
+  outline: none;
+  border-radius: 6px 0px 0px 6px;
+  font-size: 16px;
+  width: 82%;
+  padding: 4px;
+ }
+
+.updateTaskForm form button{
+  width: 14%;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  margin-left: 2%;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+.updateBtn{
+   background-color: #5dbc00;
+}
+
+.updateBtn:hover{
+  background-color: #478e00;
+}
+
+.cancelBtn{
+  background-color: #40b7ad;
+}
+
+.cancelBtn:hover{
+  background-color: #379991;
+}
+
+.Listlogo img{
+  width: 96%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align:sub;
+  margin: 0 auto;
+}
+
+.Listlink{
+  margin-left: 36px;
+ }
+
+.Listlink a{
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.Listlink a:hover{
+  color: #5dbc00;
+}
+
+.tasks{
+  margin: 0 auto;
+}
+
+.taskBg{
+  display: flex;
+  color: aliceblue;
+  margin: 0 auto 0 auto;
+  background-color:  rgb(100, 100, 100);
+  border: 8px;
+  margin-bottom: 16px;
+  padding: 8px;
+  max-width: 600px; 
+  width: 96%;
+  text-align: left;
+  border-radius: 6px;
+  position: relative;
+ }
+
+.taskBg div {
+  align-items: center;
+  display:flex;
+  height: auto;
+}
+ 
+ .taskText{
+  margin-right: 72px;
+}
+
+.taskBg .done .taskText{
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.taskNumber{
+  padding: 4px 8px 4px 8px;
+  margin-right: 12px;
+  border: 1px solid #c7f683;
+  border-radius: 50%;
+
+  height: 26px;
+  width: 26px;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.iconsWrap{
+  position: absolute;
+  color: black;
+  display: inline-block;
+  right: 8px;
+}
+
+.iconsWrap span{
+  margin-right: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(240, 255, 251);
+}
+
+.iconsWrap span:hover{
+ color:#5dbc00;
+}
+
+ .noTask{
+  color: white;
+ }

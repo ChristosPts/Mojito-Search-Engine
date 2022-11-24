@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+ 
+#homeCont{
+  padding-top: 4vw;
+  margin-bottom: 36px;
+}
+
+#searchForm{
+  min-width: 400px;
+} 
+
+#gmt:focus{
+  border: 1px solid rgba(0, 0, 0, 0.111);
+}
+
+.clrBtn:hover{
+  cursor:pointer;
+}
+
+.imgs{
+  max-width: 100px;
+}
+
+.imgs:hover{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+body{
+  background: rgb(240, 240, 240) !important;
+}
+
+.formDiv button:hover, .navDiv button:hover{
+  color: rgb(2, 191, 75);
+  transition: 0.1s;
+  background-color: rgba(208, 226, 205, 0.425);
+ }
+
+.formDiv{
+  border-radius: 8px;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.667);
+}
+
+.resultsBox{
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.341);
+}
+ 
+.resultsBox a{
+  color: rgb(135, 166, 66);
+  text-decoration: none;
+}
+
+.resultsBox a:hover{
+  color: rgb(2, 191, 75);
+}
+
+.AppsDiv{
+  display: flex;
+  transition: all 3s;
+}
+
+#navSearch{
+  min-width: 400px; 
+}
+
+@media (max-width: 769px ) {
+  .AppsDiv{
+    display:block;
+    transition: 0.31s;
+  }
+  #homeCont{
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 420px ) {
+  #searchForm{
+    min-width: 366px;
+  } 
+  #navSearch{
+    min-width: 366px; 
+  }
+
+}
+
+@media (max-width: 380px ) {
+  #searchForm{
+    min-width: 306px;
+  } 
+  #navSearch{
+    min-width: 306px; 
+  }
+
+}
+
+@media (min-width: 1920px ) {
+  #homeCont{
+    padding-top: 8vw;
+    
+  }
+}
+
+hr{
+ max-width: 96%;
+ margin: 8px auto 24px auto !important;
+}
+
+.fa-times:hover{
+  color: rgb(186, 197, 30);
+}

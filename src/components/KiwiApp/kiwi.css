@@ -1,0 +1,167 @@
+ 
+.KiwiApp{
+  font-family:'Courier New', Courier, monospace;
+  background-color: #fcfded;
+  padding-top: 32px;
+  padding-bottom: 72px;
+  min-height: 100vh;
+}
+
+.KiwiAppBody{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.kiwiLink{
+  margin-left: 24px;
+}
+
+.kiwiMain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+ }
+
+.kiwiMain h1{
+  color: black;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.kiwiMain img{
+  max-height: 72px;
+  vertical-align:sub;
+  right: 0;
+}
+
+.kiwiMain a{
+  text-decoration: none;
+  font-size: 64px;
+  color:#95bf1d;
+  text-shadow: 1.1px 1.4px 1.9px #46392b;
+}
+ 
+.kiwiMain p{
+  font-size: 16px;
+  color:#000000;
+  font-weight: bold;
+}
+
+.KiwisearchBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 96%;
+  max-width: 480px;
+  margin-bottom: 16px;
+  transition: 0.4s;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.KiwisearchBox input{
+  font-family:'Courier New', Courier, monospace !important;
+  display: block;
+  appearance: none;
+  outline: none;
+  border: none;
+  padding: 16px;
+  width: 100%;
+  transition: 0.4s;
+  font-size: 16px;
+ }
+
+.KiwisearchBox:focus-within{
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+ }
+
+ .KiwisearchBox button{
+  display: inline-block;
+  border: none;
+  font-size: 16px;
+  padding: 16px;
+  background-color: #95bf1d;
+ }
+
+ .KiwisearchBox button:hover{
+  transition: 0.4s;
+  background-color: #999999;
+ }
+
+ .KiwiResults{
+  max-width: 768px;
+  margin: 0 auto;
+  width: 96%;
+ }
+
+.KiwiResult{
+  width: 100%;
+  padding: 16px;
+  margin-top: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+
+.KiwiResult:hover{
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+}
+
+.KiwiResult h3{
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.KiwiResult  a{
+  color: #95bf1d;
+  text-decoration: none; 
+}
+
+.KiwiResult  a:visited{
+ color: #8d6132;
+}
+
+.KiwiResult p {
+  color: rgb(64, 64, 64);
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.KiwiResult p .searchmatch{
+font-weight:bold;
+color: #180000;
+}
+
+.KiwiTop{
+  padding: 8px;
+  margin-right: 16px;
+  font-size: 32px;
+  border-radius: 32px;
+  position: sticky;
+  bottom: 0;
+  background: none;
+  border: none;
+  float: right;
+}
+
+.KiwiTop i{
+   color:#180000;
+}
+.KiwiTop i:hover{
+  color:#95bf1d;
+  transition: 0.4s;
+}
+
+.LinkStyle{
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.LinkStyle:hover{
+  color:#95bf1d;
+}
